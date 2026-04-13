@@ -5,10 +5,10 @@ const LocationSection = () => {
         <h4 className="section-subtitle text-center">Onde Estamos</h4>
         <h2 className="section-title text-center">Nossas Unidades OdontoFav</h2>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', marginTop: '4rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4rem', marginTop: '4rem' }}>
           
           {/* Unidade Serra */}
-          <div className="unidade-bloco" style={{ background: 'var(--pristine-white)', padding: '2rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div className="unidade-bloco" style={{ flex: '1 1 400px', maxWidth: '500px', background: 'var(--pristine-white)', padding: '2rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
             <h3 style={{ fontSize: '2rem', color: 'var(--sapphire-blue)', marginBottom: '1rem' }}>Unidade Serra</h3>
             <p style={{ color: '#475569', marginBottom: '1rem' }}>
               Av. Jones dos Santos Neves, 429 - Caçaroca (Próximo à UPA) | CEP: 29176-437 - Serra/ES
@@ -31,7 +31,7 @@ const LocationSection = () => {
           </div>
 
           {/* Unidade Vitória */}
-          <div className="unidade-bloco" style={{ background: 'var(--pristine-white)', padding: '2rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+          <div className="unidade-bloco" style={{ flex: '1 1 400px', maxWidth: '500px', background: 'var(--pristine-white)', padding: '2rem', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
             <h3 style={{ fontSize: '2rem', color: 'var(--sapphire-blue)', marginBottom: '1rem' }}>Unidade Vitória</h3>
             <p style={{ color: '#475569', marginBottom: '1rem' }}>
               Rua Cândido Portinari, 27, 5º Andar / Sala 507 - Ed. River Center | Santa Luíza, CEP: 29045-415 - Vitória/ES

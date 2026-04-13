@@ -506,6 +506,24 @@ html, body {
   color: #64748B;
 }
 
+/* --- Mobile Menu Elements --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001; 
+}
+.hamburger span {
+  width: 25px; height: 2px;
+  background-color: var(--pristine-white);
+  transition: all 0.3s;
+}
+.header.scrolled .hamburger span { background-color: var(--sapphire-blue); }
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* Responsive */
 @media (max-width: 968px) {
   .hero-title { font-size: 3rem; }
@@ -551,24 +569,6 @@ html, body {
   .flip-card { min-height: 240px; }
   .flip-card-front, .flip-card-back { padding: 1.5rem; }
 }
-
-/* --- Mobile Menu Elements --- */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  z-index: 1001; 
-}
-.hamburger span {
-  width: 25px; height: 2px;
-  background-color: var(--pristine-white);
-  transition: all 0.3s;
-}
-.header.scrolled .hamburger span { background-color: var(--sapphire-blue); }
-.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.active span:nth-child(2) { opacity: 0; }
-.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* --- Scroll Animations --- */
 .scroll-anim {
